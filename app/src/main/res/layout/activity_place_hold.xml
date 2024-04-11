@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_place_hold.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView for Pickup Date -->
+    <TextView
+        android:id="@+id/textPickupDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Pickup Date: YYYY-MM-DD"/>
+
+    <!-- Button to Show DatePickerDialog for Pickup Date -->
+    <Button
+        android:id="@+id/btnShowDatePickerPickUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Pickup Date"/>
+
+    <!-- TextView for Return Date -->
+    <TextView
+        android:id="@+id/textReturnData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Return Date: YYYY-MM-DD"/>
+
+    <!-- Button to Show DatePickerDialog for Return Date -->
+    <Button
+        android:id="@+id/btnShowDatePickerReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Return Date"/>
+
+    <!-- Button to Check Availability -->
+    <Button
+        android:id="@+id/checkAvailabilityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Availability"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- LinearLayout to hold dynamically added buttons -->
+        <LinearLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+</LinearLayout>
+
+

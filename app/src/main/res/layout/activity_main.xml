@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="goToCreateAccount"
+        android:text="Create Account" />
+
+    <Button
+        android:id="@+id/placeHoldButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createAccountButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:onClick="goToPlaceHold"
+        android:text="Place Hold" />
+
+    <Button
+        android:id="@+id/cancelHoldButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeHoldButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:onClick="goToCancelHold"
+        android:text="Cancel Hold" />
+
+    <Button
+        android:id="@+id/manageSystemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelHoldButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:onClick="goToManageSystem"
+        android:text="Manage System" />
+
+
+</RelativeLayout>

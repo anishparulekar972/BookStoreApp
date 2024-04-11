@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Book Name"/>
+
+    <TextView
+        android:id="@+id/textAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBookName"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Author"/>
+
+    <TextView
+        android:id="@+id/textRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAuthor"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rate"/>
+
+    <TextView
+        android:id="@+id/rentDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textRate"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rent Duration"/>
+
+    <EditText
+        android:id="@+id/userNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rentDuration"
+        android:layout_marginTop="16dp"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/PasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameText"
+        android:layout_marginTop="8dp"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordText"
+        android:layout_marginTop="16dp"
+        android:text="Submit"/>
+
+</RelativeLayout>
